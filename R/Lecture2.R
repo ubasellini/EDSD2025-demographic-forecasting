@@ -72,7 +72,6 @@ mod.test <- Arima(y.diff,order = c(0,0,0),
                   include.mean = T,
                   include.constant = F)
 summary(mod.test)
-yF3 <- forecast(mod.test,h=h)
 
 ## define lenght of forecast horizon
 n.all <- length(t.all)
@@ -85,6 +84,7 @@ tF <- t.all[!t.all%in%t]
 ## producing fort.all## producing forecast
 yF1 <- forecast(mod1,h=h)
 yF2 <- forecast(mod2,h=h)
+yF3 <- forecast(mod.test,h=h)
 plot(yF1)
 plot(yF2)
 
@@ -179,4 +179,42 @@ lines(tF,lfF.AR$mean,col=6,lwd=2)
 lines(tF,lfF.AR$upper[,1],col=6,lwd=2,lty=2)
 lines(tF,lfF.AR$lower[,1],col=6,lwd=2,lty=2)
 
+## including simulations
 
+## computing simulated future paths
+## number of simulations
+nS <- 100    ## increase for improved precision
+set.seed(1)  ## for reproducibility
+## object to store simulations
+LFsim <- matrix(NA,h,nS)
+s <- 1
+for (s in 1:nS){
+  lf.fore.sim <- simulate(mod3, nsim=h,
+                          future=TRUE, bootstrap=TRUE)
+  ## plotting one simulation
+  # plot(t,lf,ylim=range(lf,lf.fore.sim),xlim=range(t,tF))
+  # lines(tF,lf.fore.sim)
+  ## saving
+  LFsim[,s] <- lf.fore.sim
+}
+## plotting all simulations
+plot(t,lf,ylim=range(lf,LFsim),xlim=range(t,tF))
+matlines(tF,LFsim,col="grey80",lty=1)
+## deriving median and 95% PI
+lev <- 95; lev.p <- lev/100
+lf.fore.med <- apply(LFsim,1,median)
+lf.fore.low <- apply(LFsim,1,quantile,prob=(1-lev.p)/2)
+lf.fore.up <- apply(LFsim,1,quantile,prob=1-(1-lev.p)/2)
+## comparing PIs
+plot(t,lf,ylim=range(lf,lfF.AR$lower,lf.fore.low),xlim=range(t,tF))
+## analytical
+lines(tF,lfF.AR$mean,col=3,lwd=2)
+lines(tF,lfF.AR$upper[,2],col=3,lwd=2,lty=2)
+lines(tF,lfF.AR$lower[,2],col=3,lwd=2,lty=2)
+## simulations
+lines(tF,lf.fore.med,col=4,lwd=2)
+lines(tF,lf.fore.up,col=4,lwd=2,lty=2)
+lines(tF,lf.fore.low,col=4,lwd=2,lty=2)
+legend("bottomleft",c("analytical","simulations"),col=c(3,4),lwd=2)
+
+## END
