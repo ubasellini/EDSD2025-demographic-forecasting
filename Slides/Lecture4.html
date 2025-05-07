@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="Lecture4_pre-class_files/libs/clipboard/clipboard.min.js"></script>
-<script src="Lecture4_pre-class_files/libs/quarto-html/tabby.min.js"></script>
-<script src="Lecture4_pre-class_files/libs/quarto-html/popper.min.js"></script>
-<script src="Lecture4_pre-class_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="Lecture4_pre-class_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="Lecture4_pre-class_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="Lecture4_pre-class_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="Lecture4_pre-class_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="Lecture4_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Lecture4_files/libs/quarto-html/tabby.min.js"></script>
+<script src="Lecture4_files/libs/quarto-html/popper.min.js"></script>
+<script src="Lecture4_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="Lecture4_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Lecture4_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="Lecture4_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="Lecture4_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.553">
 
   <meta name="author" content="Ugofilippo Basellini">
@@ -16,8 +16,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="Lecture4_pre-class_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="Lecture4_pre-class_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="Lecture4_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="Lecture4_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -96,11 +96,11 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="Lecture4_pre-class_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="Lecture4_pre-class_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="Lecture4_pre-class_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="Lecture4_pre-class_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="Lecture4_pre-class_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="Lecture4_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="Lecture4_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="Lecture4_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="Lecture4_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="Lecture4_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -432,7 +432,7 @@ Ugofilippo Basellini
 <li>Crucial for sustainability of pensions, insurances, elderly care; predicting population ageing and projecting populations; …</li>
 <li>Until the 1980s, the methods used to forecast mortality were <strong>deterministic</strong>, based on mathematical formulae or expert judgment</li>
 <li>Revived interest in recent years following the introduction of the Lee-Carter method in 1992</li>
-<li>One of the firstly introduced <strong>stochastic</strong> mortality models <span class="math inline">\(\Rightarrow\)</span> the model “revolutionized probabilistic mortality and population forecasting” (Raftery 2023) <!-- :::  --></li>
+<li>One of the firstly introduced <strong>stochastic</strong> mortality models <span class="math inline">\(\Rightarrow\)</span> the model “revolutionized probabilistic mortality and population forecasting” (Raftery 2023) <!-- ::: --></li>
 </ul>
 </div>
 </section>
@@ -475,7 +475,7 @@ Ugofilippo Basellini
 <h2>The LC method: a schematic view</h2>
 <div style="font-size: 60%;">
 <!-- ::: {.fragment fragment-index=1} -->
-<p><span class="math display">\[\ln \left(m_{x,t}\right) \simeq \color{green}{\alpha_x} + \color{orange}{\beta_x} \color{violet}{\kappa_t}\]</span> <!-- :::  --></p>
+<p><span class="math display">\[\ln \left(m_{x,t}\right) \simeq \color{green}{\alpha_x} + \color{orange}{\beta_x} \color{violet}{\kappa_t}\]</span> <!-- ::: --></p>
 <!-- ::: {.fragment fragment-index=2} -->
 <p><span class="math display">\[              \left ( \begin{array}{cccc}
                     \ln(m_{x_1,t_1}) &amp; \ln(m_{x_1,t_2}) &amp; \ldots &amp; \ln(m_{x_1,t_n})\\
@@ -524,7 +524,7 @@ Ugofilippo Basellini
 <li><span class="math inline">\(\boldsymbol{\theta}_2 = \left[\boldsymbol{\color{green}{\alpha}} - \boldsymbol{\color{orange}{\beta}} c ,\boldsymbol{\color{orange}{\beta}},\boldsymbol{\color{violet}{\kappa}} + c\right]\)</span> is also a solution</li>
 <li><span class="math inline">\(\boldsymbol{\theta}_3 =  \left[\boldsymbol{\color{green}{\alpha}},  \boldsymbol{\color{orange}{\beta}} c, \boldsymbol{\color{violet}{\kappa}} / c\right]\)</span> is also a solution</li>
 </ul></li>
-<li>Two constraints introduced to ensure model identification: <span class="math display">\[\sum_x \color{orange}{\beta_x} = 1 \qquad \mathrm{and} \qquad \sum_t  \color{violet}{\kappa_t} = 0\]</span> <!-- :::  --></li>
+<li>Two constraints introduced to ensure model identification: <span class="math display">\[\sum_x \color{orange}{\beta_x} = 1 \qquad \mathrm{and} \qquad \sum_t  \color{violet}{\kappa_t} = 0\]</span> <!-- ::: --></li>
 </ul>
 </section>
 <section id="model-estimation" class="slide level2 smaller">
@@ -536,7 +536,7 @@ Ugofilippo Basellini
 \qquad(1)\]</span></span></p></li>
 <li><p>A singular value decomposition (SVD) is employed to minimize <a href="#/model-estimation" class="quarto-xref">Equation&nbsp;1</a> &amp; derive an ordinary least squares (OLS) solution:</p>
 <ul>
-<li><span class="math inline">\(\color{green}{\hat{\alpha}_x}\)</span> is the average of the observed <span class="math inline">\(\ln \left(m_{x,t}\right)\)</span>: <span class="math inline">\(\color{green}{\hat{\alpha}_x} = \frac{1}{n} \sum_{t=1}^n \ln \left(m_{x,t}\right)\)</span> <!-- :::  --></li>
+<li><span class="math inline">\(\color{green}{\hat{\alpha}_x}\)</span> is the average of the observed <span class="math inline">\(\ln \left(m_{x,t}\right)\)</span>: <span class="math inline">\(\color{green}{\hat{\alpha}_x} = \frac{1}{n} \sum_{t=1}^n \ln \left(m_{x,t}\right)\)</span> <!-- ::: --></li>
 </ul></li>
 </ul>
 </section>
@@ -558,43 +558,41 @@ Ugofilippo Basellini
 </section>
 <section id="one-possible-solution" class="slide level2">
 <h2>One possible solution</h2>
-<!-- ``` r -->
-<!-- ## cleaning the workspace -->
-<!-- rm(list=ls(all=TRUE)) -->
-<!-- ## load useful packages -->
-<!-- library(tidyverse) -->
-<!-- ## loading data -->
-<!-- setwd(dirname(rstudioapi::getActiveDocumentContext()$path)) -->
-<!-- load("data/MORTSWE.Rdata") -->
-<!-- ## subset -->
-<!-- my.df <- MORT.SWE %>% filter(Year>=1950, Sex=="Male", Age <= 100) -->
-<!-- ## extract data -->
-<!-- x <- unique(my.df$Age) -->
-<!-- t <- unique(my.df$Year) -->
-<!-- n <- length(t) -->
-<!-- m <- length(x) -->
-<!-- ## matrices -->
-<!-- DEATHS <- matrix(my.df$Deaths,m,n) -->
-<!-- EXPOS <- matrix(my.df$Exposures,m,n) -->
-<!-- RATES <- matrix(my.df$Rates,m,n) -->
-<!-- LRATES <- matrix(my.df$logRates,m,n) -->
-<!-- ##---- step 1: derive ALPHA ----- -->
-<!-- ## adjusting cell with 0 deaths -->
-<!-- DEATHS1 <- DEATHS -->
-<!-- DEATHS1[DEATHS==0] <- min(DEATHS[DEATHS!=0]) -->
-<!-- LRATES1 <- log(DEATHS1/EXPOS) -->
-<!-- ## compute the mean of observed rates -->
-<!-- Alpha <- apply(LRATES1,1,mean) -->
-<!-- ## plotting -->
-<!-- matplot(x,LRATES,t="l",lty=1,lwd=0.8,col="grey70",xlab="",ylab="") -->
-<!-- mtext("ages",side=1,line=1.5);mtext("log-mortality",side=2,line=2) -->
-<!-- lines(x,Alpha,col="darkgreen",lwd=2) -->
-<!-- ``` -->
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="do">## cleaning the workspace</span></span>
+<span id="cb1-2"><a href=""></a><span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>(<span class="at">all=</span><span class="cn">TRUE</span>))</span>
+<span id="cb1-3"><a href=""></a><span class="do">## load useful packages</span></span>
+<span id="cb1-4"><a href=""></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-5"><a href=""></a><span class="do">## loading data</span></span>
+<span id="cb1-6"><a href=""></a><span class="fu">setwd</span>(<span class="fu">dirname</span>(rstudioapi<span class="sc">::</span><span class="fu">getActiveDocumentContext</span>()<span class="sc">$</span>path))</span>
+<span id="cb1-7"><a href=""></a><span class="fu">load</span>(<span class="st">"data/MORTSWE.Rdata"</span>)</span>
+<span id="cb1-8"><a href=""></a><span class="do">## subset</span></span>
+<span id="cb1-9"><a href=""></a>my.df <span class="ot">&lt;-</span> MORT.SWE <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Year<span class="sc">&gt;=</span><span class="dv">1950</span>, Sex<span class="sc">==</span><span class="st">"Male"</span>, Age <span class="sc">&lt;=</span> <span class="dv">100</span>)</span>
+<span id="cb1-10"><a href=""></a><span class="do">## extract data</span></span>
+<span id="cb1-11"><a href=""></a>x <span class="ot">&lt;-</span> <span class="fu">unique</span>(my.df<span class="sc">$</span>Age)</span>
+<span id="cb1-12"><a href=""></a>t <span class="ot">&lt;-</span> <span class="fu">unique</span>(my.df<span class="sc">$</span>Year)</span>
+<span id="cb1-13"><a href=""></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(t)</span>
+<span id="cb1-14"><a href=""></a>m <span class="ot">&lt;-</span> <span class="fu">length</span>(x)</span>
+<span id="cb1-15"><a href=""></a><span class="do">## matrices</span></span>
+<span id="cb1-16"><a href=""></a>DEATHS <span class="ot">&lt;-</span> <span class="fu">matrix</span>(my.df<span class="sc">$</span>Deaths,m,n)</span>
+<span id="cb1-17"><a href=""></a>EXPOS <span class="ot">&lt;-</span> <span class="fu">matrix</span>(my.df<span class="sc">$</span>Exposures,m,n)</span>
+<span id="cb1-18"><a href=""></a>RATES <span class="ot">&lt;-</span> <span class="fu">matrix</span>(my.df<span class="sc">$</span>Rates,m,n)</span>
+<span id="cb1-19"><a href=""></a>LRATES <span class="ot">&lt;-</span> <span class="fu">matrix</span>(my.df<span class="sc">$</span>logRates,m,n)</span>
+<span id="cb1-20"><a href=""></a><span class="do">##---- step 1: derive ALPHA -----</span></span>
+<span id="cb1-21"><a href=""></a><span class="do">## adjusting cell with 0 deaths</span></span>
+<span id="cb1-22"><a href=""></a>DEATHS1 <span class="ot">&lt;-</span> DEATHS</span>
+<span id="cb1-23"><a href=""></a>DEATHS1[DEATHS<span class="sc">==</span><span class="dv">0</span>] <span class="ot">&lt;-</span> <span class="fu">min</span>(DEATHS[DEATHS<span class="sc">!=</span><span class="dv">0</span>])</span>
+<span id="cb1-24"><a href=""></a>LRATES1 <span class="ot">&lt;-</span> <span class="fu">log</span>(DEATHS1<span class="sc">/</span>EXPOS)</span>
+<span id="cb1-25"><a href=""></a><span class="do">## compute the mean of observed rates</span></span>
+<span id="cb1-26"><a href=""></a>Alpha <span class="ot">&lt;-</span> <span class="fu">apply</span>(LRATES1,<span class="dv">1</span>,mean)</span>
+<span id="cb1-27"><a href=""></a><span class="do">## plotting</span></span>
+<span id="cb1-28"><a href=""></a><span class="fu">matplot</span>(x,LRATES,<span class="at">t=</span><span class="st">"l"</span>,<span class="at">lty=</span><span class="dv">1</span>,<span class="at">lwd=</span><span class="fl">0.8</span>,<span class="at">col=</span><span class="st">"grey70"</span>,<span class="at">xlab=</span><span class="st">""</span>,<span class="at">ylab=</span><span class="st">""</span>)</span>
+<span id="cb1-29"><a href=""></a><span class="fu">mtext</span>(<span class="st">"ages"</span>,<span class="at">side=</span><span class="dv">1</span>,<span class="at">line=</span><span class="fl">1.5</span>);<span class="fu">mtext</span>(<span class="st">"log-mortality"</span>,<span class="at">side=</span><span class="dv">2</span>,<span class="at">line=</span><span class="dv">2</span>)</span>
+<span id="cb1-30"><a href=""></a><span class="fu">lines</span>(x,Alpha,<span class="at">col=</span><span class="st">"darkgreen"</span>,<span class="at">lwd=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="one-possible-solution-1" class="slide level2">
 <h2>One possible solution</h2>
 
-<img data-src="Lecture4_pre-class_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"></section>
+<img data-src="Lecture4_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"></section>
 <section id="model-estimation-1" class="slide level2 smaller">
 <h2>Model estimation</h2>
 <!-- ::: incremental -->
@@ -605,12 +603,13 @@ Ugofilippo Basellini
 <li><p>A singular value decomposition (SVD) is employed to minimize <a href="#/model-estimation-1" class="quarto-xref">Equation&nbsp;2</a> &amp; derive an ordinary least squares (OLS) solution:</p>
 <ul>
 <li><span class="math inline">\(\color{green}{\hat{\alpha}_x}\)</span> is the average of the observed <span class="math inline">\(\ln \left(m_{x,t}\right)\)</span>: <span class="math inline">\(\color{green}{\hat{\alpha}_x} = \frac{1}{n} \sum_{t=1}^n \ln \left(m_{x,t}\right)\)</span></li>
-<li><span class="math inline">\(\color{orange}{\hat{\beta}_x}\)</span> and <span class="math inline">\(\color{violet}{\hat{\kappa}_t}\)</span> are the first left- and right-singular vectors of the SVD of the matrix <span class="math inline">\(\ln \left(m_{x,t}\right) - \color{green}{\hat{\alpha}_x}\)</span>, adjusted to comply with the two constraints <span class="math inline">\(\sum_x \color{orange}{\beta_x} = 1 \qquad \mathrm{and} \qquad \sum_t  \color{violet}{\kappa_t} = 0\)</span> <!-- :::  --></li>
+<li><span class="math inline">\(\color{orange}{\hat{\beta}_x}\)</span> and <span class="math inline">\(\color{violet}{\hat{\kappa}_t}\)</span> are the first left- and right-singular vectors of the SVD of the matrix <span class="math inline">\(\ln \left(m_{x,t}\right) - \color{green}{\hat{\alpha}_x}\)</span>, adjusted to comply with the two constraints <span class="math inline">\(\sum_x \color{orange}{\beta_x} = 1 \qquad \mathrm{and} \qquad \sum_t  \color{violet}{\kappa_t} = 0\)</span> <!-- ::: --></li>
 </ul></li>
 </ul>
 </section>
 <section id="singular-value-decomposition" class="slide level2">
 <h2>Singular Value Decomposition</h2>
+<!-- ::: incremental -->
 <div style="font-size: 75%;">
 <ul>
 <li><p>An SVD of any <span class="math inline">\(m \times n\)</span> rectangular matrix <span class="math inline">\(\boldsymbol{M}\)</span> is a factorization of the form: <span class="math display">\[
@@ -629,6 +628,7 @@ U_{,m} \, s_{m,m} \, V_{,m}'
 \]</span></p></li>
 <li><p>The first few singular values/vectors are more important in describing the information in <span class="math inline">\(\boldsymbol{M}\)</span></p></li>
 </ul>
+<!-- ::: -->
 </div>
 </section>
 <section id="exercise-1" class="slide level2">
@@ -649,59 +649,57 @@ U_{,m} \, s_{m,m} \, V_{,m}'
 </section>
 <section id="one-possible-solution-2" class="slide level2">
 <h2>One possible solution</h2>
-<!-- ``` r -->
-<!-- ##---- step 2: derive BETA and KAPPA ----- -->
-<!-- ## derive matrix of residuals ("centred" mortality rates) -->
-<!-- LMXres <- LRATES1 - Alpha -->
-<!-- ## plotting the matrix -->
-<!-- library(fields) -->
-<!-- image.plot(t,x,t(LMXres),axes="F",xlab="",ylab="") -->
-<!-- axis(1);axis(2,las=2);box() -->
-<!-- mtext("ages",side=2,line=2);mtext("year",side=1,line=2) -->
-<!-- dev.off() -->
-<!-- ## performing the SVD -->
-<!-- LCsvd <- svd(LMXres,nu=1,nv=1) -->
-<!-- ## extract first left- and right-singular vectors of svd -->
-<!-- Beta <- c(LCsvd$u) -->
-<!-- Kappa1 <- c(LCsvd$v) -->
-<!-- ## plotting singular vectors -->
-<!-- par(mfrow=c(1,2)) -->
-<!-- plot(x,Beta) -->
-<!-- plot(t,Kappa1) -->
-<!-- ## including the constraints -->
-<!-- ## constraint 1 -->
-<!-- sum.Beta <- sum(Beta) -->
-<!-- Beta <- Beta/sum.Beta -->
-<!-- sum(Beta) -->
-<!-- ## constraint 2 -->
-<!-- Kappa1 <- LCsvd$d[1]*Kappa1*sum.Beta -->
-<!-- sum(Kappa1) -->
-<!-- ## plotting -->
-<!-- plot(x,Beta) -->
-<!-- plot(t,Kappa1) -->
-<!-- par(mfrow=c(1,1)) -->
-<!-- ``` -->
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href=""></a><span class="do">##---- step 2: derive BETA and KAPPA -----</span></span>
+<span id="cb2-2"><a href=""></a><span class="do">## derive matrix of residuals ("centred" mortality rates)</span></span>
+<span id="cb2-3"><a href=""></a>LMXres <span class="ot">&lt;-</span> LRATES1 <span class="sc">-</span> Alpha</span>
+<span id="cb2-4"><a href=""></a><span class="do">## plotting the matrix</span></span>
+<span id="cb2-5"><a href=""></a><span class="fu">library</span>(fields)</span>
+<span id="cb2-6"><a href=""></a><span class="fu">image.plot</span>(t,x,<span class="fu">t</span>(LMXres),<span class="at">axes=</span><span class="st">"F"</span>,<span class="at">xlab=</span><span class="st">""</span>,<span class="at">ylab=</span><span class="st">""</span>)</span>
+<span id="cb2-7"><a href=""></a><span class="fu">axis</span>(<span class="dv">1</span>);<span class="fu">axis</span>(<span class="dv">2</span>,<span class="at">las=</span><span class="dv">2</span>);<span class="fu">box</span>()</span>
+<span id="cb2-8"><a href=""></a><span class="fu">mtext</span>(<span class="st">"ages"</span>,<span class="at">side=</span><span class="dv">2</span>,<span class="at">line=</span><span class="dv">2</span>);<span class="fu">mtext</span>(<span class="st">"year"</span>,<span class="at">side=</span><span class="dv">1</span>,<span class="at">line=</span><span class="dv">2</span>)</span>
+<span id="cb2-9"><a href=""></a><span class="fu">dev.off</span>()</span>
+<span id="cb2-10"><a href=""></a><span class="do">## performing the SVD</span></span>
+<span id="cb2-11"><a href=""></a>LCsvd <span class="ot">&lt;-</span> <span class="fu">svd</span>(LMXres,<span class="at">nu=</span><span class="dv">1</span>,<span class="at">nv=</span><span class="dv">1</span>)</span>
+<span id="cb2-12"><a href=""></a><span class="do">## extract first left- and right-singular vectors of svd</span></span>
+<span id="cb2-13"><a href=""></a>Beta <span class="ot">&lt;-</span> <span class="fu">c</span>(LCsvd<span class="sc">$</span>u)</span>
+<span id="cb2-14"><a href=""></a>Kappa1 <span class="ot">&lt;-</span> <span class="fu">c</span>(LCsvd<span class="sc">$</span>v)</span>
+<span id="cb2-15"><a href=""></a><span class="do">## plotting singular vectors</span></span>
+<span id="cb2-16"><a href=""></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))</span>
+<span id="cb2-17"><a href=""></a><span class="fu">plot</span>(x,Beta)</span>
+<span id="cb2-18"><a href=""></a><span class="fu">plot</span>(t,Kappa1)</span>
+<span id="cb2-19"><a href=""></a><span class="do">## including the constraints</span></span>
+<span id="cb2-20"><a href=""></a><span class="do">## constraint 1</span></span>
+<span id="cb2-21"><a href=""></a>sum.Beta <span class="ot">&lt;-</span> <span class="fu">sum</span>(Beta)</span>
+<span id="cb2-22"><a href=""></a>Beta <span class="ot">&lt;-</span> Beta<span class="sc">/</span>sum.Beta</span>
+<span id="cb2-23"><a href=""></a><span class="fu">sum</span>(Beta)</span>
+<span id="cb2-24"><a href=""></a><span class="do">## constraint 2</span></span>
+<span id="cb2-25"><a href=""></a>Kappa1 <span class="ot">&lt;-</span> LCsvd<span class="sc">$</span>d[<span class="dv">1</span>]<span class="sc">*</span>Kappa1<span class="sc">*</span>sum.Beta</span>
+<span id="cb2-26"><a href=""></a><span class="fu">sum</span>(Kappa1)</span>
+<span id="cb2-27"><a href=""></a><span class="do">## plotting</span></span>
+<span id="cb2-28"><a href=""></a><span class="fu">plot</span>(x,Beta)</span>
+<span id="cb2-29"><a href=""></a><span class="fu">plot</span>(t,Kappa1)</span>
+<span id="cb2-30"><a href=""></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="log-mortality-rates" class="slide level2">
 <h2>Log-mortality rates</h2>
 
-<img data-src="Lecture4_pre-class_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section>
+<img data-src="Lecture4_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section>
 <section id="centred-log-mortality-rates" class="slide level2">
 <h2>Centred log-mortality rates</h2>
 
-<img data-src="Lecture4_pre-class_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
+<img data-src="Lecture4_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
 <section id="svd-approximation" class="slide level2">
 <h2>SVD approximation</h2>
 
-<img data-src="Lecture4_pre-class_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"></section>
+<img data-src="Lecture4_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"></section>
 <section id="colororangehatbeta_x-and-colorviolethatkappa_t-from-svd" class="slide level2">
 <h2><span class="math inline">\(\color{orange}{\hat{\beta}_x}\)</span> and <span class="math inline">\(\color{violet}{\hat{\kappa}_t}\)</span> from SVD</h2>
 
-<img data-src="Lecture4_pre-class_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section>
+<img data-src="Lecture4_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section>
 <section id="colororangehatbeta_x-and-colorviolethatkappa_t-with-constraints" class="slide level2">
 <h2><span class="math inline">\(\color{orange}{\hat{\beta}_x}\)</span> and <span class="math inline">\(\color{violet}{\hat{\kappa}_t}\)</span> with constraints</h2>
 
-<img data-src="Lecture4_pre-class_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"></section>
+<img data-src="Lecture4_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"></section>
 <section id="second-step-estimation-of-colorviolethatkappa_t" class="slide level2">
 <h2>Second step estimation of <span class="math inline">\(\, \color{violet}{\hat{\kappa}_t}\)</span></h2>
 <ul>
@@ -711,36 +709,36 @@ U_{,m} \, s_{m,m} \, V_{,m}'
 </section>
 <section id="one-possible-solution-3" class="slide level2">
 <h2>One possible solution</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="do">##---- step 3: adjust KAPPA -----</span></span>
-<span id="cb1-2"><a href=""></a><span class="do">## function to compute difference between observed and fitted LC deaths</span></span>
-<span id="cb1-3"><a href=""></a>koptim <span class="ot">&lt;-</span> <span class="cf">function</span>(par,alpha,beta,sum.dx,Exp){</span>
-<span id="cb1-4"><a href=""></a>  kappa <span class="ot">&lt;-</span> par[<span class="dv">1</span>]</span>
-<span id="cb1-5"><a href=""></a>  lmx.lc <span class="ot">&lt;-</span> alpha<span class="sc">+</span>beta<span class="sc">*</span>kappa</span>
-<span id="cb1-6"><a href=""></a>  z.lc <span class="ot">&lt;-</span> <span class="fu">exp</span>(lmx.lc)<span class="sc">*</span>Exp</span>
-<span id="cb1-7"><a href=""></a>  sum.z.lc <span class="ot">&lt;-</span> <span class="fu">sum</span>(z.lc)</span>
-<span id="cb1-8"><a href=""></a>  diff.lc <span class="ot">&lt;-</span> <span class="fu">abs</span>(sum.dx<span class="sc">-</span>sum.z.lc)</span>
-<span id="cb1-9"><a href=""></a>  <span class="fu">return</span>(diff.lc)</span>
-<span id="cb1-10"><a href=""></a>}</span>
-<span id="cb1-11"><a href=""></a><span class="do">## adjust Kappa every year</span></span>
-<span id="cb1-12"><a href=""></a>Kappa <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n)</span>
-<span id="cb1-13"><a href=""></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n){</span>
-<span id="cb1-14"><a href=""></a>  KappaSecStep <span class="ot">&lt;-</span> <span class="fu">optimize</span>(<span class="at">f=</span>koptim,<span class="at">interval=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">100</span>,<span class="dv">100</span>),<span class="at">alpha=</span>Alpha,</span>
-<span id="cb1-15"><a href=""></a>  <span class="at">beta=</span>Beta,<span class="at">sum.dx=</span><span class="fu">sum</span>(DEATHS[,i]),<span class="at">Exp=</span>EXPOS[,i])</span>
-<span id="cb1-16"><a href=""></a>  Kappa[i] <span class="ot">&lt;-</span> KappaSecStep<span class="sc">$</span>minimum</span>
-<span id="cb1-17"><a href=""></a>}</span>
-<span id="cb1-18"><a href=""></a><span class="do">## plotting</span></span>
-<span id="cb1-19"><a href=""></a><span class="fu">plot</span>(t,Kappa1,<span class="at">ylim=</span><span class="fu">range</span>(Kappa1,Kappa),<span class="at">t=</span><span class="st">"l"</span>,<span class="at">lwd=</span><span class="dv">2</span>)</span>
-<span id="cb1-20"><a href=""></a><span class="fu">lines</span>(t,Kappa,<span class="at">col=</span><span class="dv">4</span>,<span class="at">lwd=</span><span class="dv">2</span>)</span>
-<span id="cb1-21"><a href=""></a><span class="fu">legend</span>(<span class="st">"topright"</span>,<span class="fu">c</span>(<span class="st">"from SVD"</span>,<span class="st">"second-step adjustment"</span>),<span class="at">col=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">4</span>),<span class="at">lwd=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a><span class="do">##---- step 3: adjust KAPPA -----</span></span>
+<span id="cb3-2"><a href=""></a><span class="do">## function to compute difference between observed and fitted LC deaths</span></span>
+<span id="cb3-3"><a href=""></a>koptim <span class="ot">&lt;-</span> <span class="cf">function</span>(par,alpha,beta,sum.dx,Exp){</span>
+<span id="cb3-4"><a href=""></a>  kappa <span class="ot">&lt;-</span> par[<span class="dv">1</span>]</span>
+<span id="cb3-5"><a href=""></a>  lmx.lc <span class="ot">&lt;-</span> alpha<span class="sc">+</span>beta<span class="sc">*</span>kappa</span>
+<span id="cb3-6"><a href=""></a>  z.lc <span class="ot">&lt;-</span> <span class="fu">exp</span>(lmx.lc)<span class="sc">*</span>Exp</span>
+<span id="cb3-7"><a href=""></a>  sum.z.lc <span class="ot">&lt;-</span> <span class="fu">sum</span>(z.lc)</span>
+<span id="cb3-8"><a href=""></a>  diff.lc <span class="ot">&lt;-</span> <span class="fu">abs</span>(sum.dx<span class="sc">-</span>sum.z.lc)</span>
+<span id="cb3-9"><a href=""></a>  <span class="fu">return</span>(diff.lc)</span>
+<span id="cb3-10"><a href=""></a>}</span>
+<span id="cb3-11"><a href=""></a><span class="do">## adjust Kappa every year</span></span>
+<span id="cb3-12"><a href=""></a>Kappa <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n)</span>
+<span id="cb3-13"><a href=""></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n){</span>
+<span id="cb3-14"><a href=""></a>  KappaSecStep <span class="ot">&lt;-</span> <span class="fu">optimize</span>(<span class="at">f=</span>koptim,<span class="at">interval=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">100</span>,<span class="dv">100</span>),<span class="at">alpha=</span>Alpha,</span>
+<span id="cb3-15"><a href=""></a>  <span class="at">beta=</span>Beta,<span class="at">sum.dx=</span><span class="fu">sum</span>(DEATHS[,i]),<span class="at">Exp=</span>EXPOS[,i])</span>
+<span id="cb3-16"><a href=""></a>  Kappa[i] <span class="ot">&lt;-</span> KappaSecStep<span class="sc">$</span>minimum</span>
+<span id="cb3-17"><a href=""></a>}</span>
+<span id="cb3-18"><a href=""></a><span class="do">## plotting</span></span>
+<span id="cb3-19"><a href=""></a><span class="fu">plot</span>(t,Kappa1,<span class="at">ylim=</span><span class="fu">range</span>(Kappa1,Kappa),<span class="at">t=</span><span class="st">"l"</span>,<span class="at">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb3-20"><a href=""></a><span class="fu">lines</span>(t,Kappa,<span class="at">col=</span><span class="dv">4</span>,<span class="at">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb3-21"><a href=""></a><span class="fu">legend</span>(<span class="st">"topright"</span>,<span class="fu">c</span>(<span class="st">"from SVD"</span>,<span class="st">"second-step adjustment"</span>),<span class="at">col=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">4</span>),<span class="at">lwd=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="second-step-estimation-of-colorviolethatkappa_t-1" class="slide level2">
 <h2>Second step estimation of <span class="math inline">\(\, \color{violet}{\hat{\kappa}_t}\)</span></h2>
 
-<img data-src="Lecture4_pre-class_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section>
+<img data-src="Lecture4_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section>
 <section id="goodness-of-fit" class="slide level2">
 <h2>Goodness-of-fit</h2>
 
-<img data-src="Lecture4_pre-class_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
+<img data-src="Lecture4_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
 <section id="intermezzo-animated-visualizations-shiny-app" class="slide level2">
 <h2>Intermezzo : animated visualizations &amp; shiny-app</h2>
 <p>In some instances, it can be useful to introduce dynamic plots, animations and flexible outputs in your presentations or documents:</p>
@@ -749,7 +747,7 @@ U_{,m} \, s_{m,m} \, V_{,m}'
 <li>can grab the audience’s attention</li>
 <li>show time-series evolutions</li>
 <li>to describe your model</li>
-<li>sensitivity analysis of your results <!-- :::  --></li>
+<li>sensitivity analysis of your results <!-- ::: --></li>
 </ul>
 </section>
 <section id="animated-images" class="slide level2">
@@ -757,36 +755,36 @@ U_{,m} \, s_{m,m} \, V_{,m}'
 <!-- ::: incremental -->
 <ul>
 <li><code>\animategraphics</code> in Beamer (see LaTeX workshop)</li>
-<li><code>gganimate</code> package in Quarto <!-- :::  --></li>
+<li><code>gganimate</code> package in Quarto <!-- ::: --></li>
 </ul>
 </section>
 <section id="animation-plots-with-gganimate" class="slide level2">
 <h2>Animation plots with <code>gganimate</code></h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href=""></a><span class="do">## fitted log-mortality</span></span>
-<span id="cb2-2"><a href=""></a>Ones <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="dv">1</span>,n)</span>
-<span id="cb2-3"><a href=""></a>ETAlc <span class="ot">&lt;-</span> Alpha<span class="sc">%*%</span><span class="fu">t</span>(Ones) <span class="sc">+</span> Beta<span class="sc">%*%</span><span class="fu">t</span>(Kappa)</span>
-<span id="cb2-4"><a href=""></a><span class="do">## basic plot</span></span>
-<span id="cb2-5"><a href=""></a>g <span class="ot">&lt;-</span> my.df <span class="sc">%&gt;%</span></span>
-<span id="cb2-6"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">logRates=</span><span class="fu">case_when</span>(</span>
-<span id="cb2-7"><a href=""></a>    <span class="fu">is.infinite</span>(logRates)<span class="sc">~</span><span class="cn">NA</span>,</span>
-<span id="cb2-8"><a href=""></a>    <span class="cn">TRUE</span><span class="sc">~</span>logRates),</span>
-<span id="cb2-9"><a href=""></a>    <span class="at">Fitted=</span><span class="fu">c</span>(ETAlc)) <span class="sc">%&gt;%</span></span>
-<span id="cb2-10"><a href=""></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Age,<span class="at">group=</span>Year))<span class="sc">+</span></span>
-<span id="cb2-11"><a href=""></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">y=</span>logRates))<span class="sc">+</span></span>
-<span id="cb2-12"><a href=""></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y=</span>Fitted),<span class="at">color=</span><span class="st">"darkorange"</span>,<span class="at">linewidth=</span><span class="fl">1.2</span>)<span class="sc">+</span></span>
-<span id="cb2-13"><a href=""></a>  <span class="fu">scale_color_viridis_c</span>() <span class="sc">+</span></span>
-<span id="cb2-14"><a href=""></a>  <span class="fu">theme_bw</span>(<span class="at">base_size =</span> <span class="dv">18</span>) <span class="sc">+</span></span>
-<span id="cb2-15"><a href=""></a>  <span class="fu">labs</span>(<span class="at">y=</span> <span class="st">"Log Mortality Rate"</span>)</span>
-<span id="cb2-16"><a href=""></a><span class="do">## animating with gganimate</span></span>
-<span id="cb2-17"><a href=""></a><span class="fu">library</span>(gganimate)</span>
-<span id="cb2-18"><a href=""></a>gg <span class="ot">&lt;-</span> g <span class="sc">+</span> <span class="fu">transition_time</span>(Year) <span class="sc">+</span></span>
-<span id="cb2-19"><a href=""></a>  <span class="fu">ggtitle</span>(<span class="st">"Year {frame_time}"</span>)</span>
-<span id="cb2-20"><a href=""></a><span class="fu">animate</span>(gg, <span class="at">fps=</span><span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href=""></a><span class="do">## fitted log-mortality</span></span>
+<span id="cb4-2"><a href=""></a>Ones <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="dv">1</span>,n)</span>
+<span id="cb4-3"><a href=""></a>ETAlc <span class="ot">&lt;-</span> Alpha<span class="sc">%*%</span><span class="fu">t</span>(Ones) <span class="sc">+</span> Beta<span class="sc">%*%</span><span class="fu">t</span>(Kappa)</span>
+<span id="cb4-4"><a href=""></a><span class="do">## basic plot</span></span>
+<span id="cb4-5"><a href=""></a>g <span class="ot">&lt;-</span> my.df <span class="sc">%&gt;%</span></span>
+<span id="cb4-6"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">logRates=</span><span class="fu">case_when</span>(</span>
+<span id="cb4-7"><a href=""></a>    <span class="fu">is.infinite</span>(logRates)<span class="sc">~</span><span class="cn">NA</span>,</span>
+<span id="cb4-8"><a href=""></a>    <span class="cn">TRUE</span><span class="sc">~</span>logRates),</span>
+<span id="cb4-9"><a href=""></a>    <span class="at">Fitted=</span><span class="fu">c</span>(ETAlc)) <span class="sc">%&gt;%</span></span>
+<span id="cb4-10"><a href=""></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Age,<span class="at">group=</span>Year))<span class="sc">+</span></span>
+<span id="cb4-11"><a href=""></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">y=</span>logRates))<span class="sc">+</span></span>
+<span id="cb4-12"><a href=""></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y=</span>Fitted),<span class="at">color=</span><span class="st">"darkorange"</span>,<span class="at">linewidth=</span><span class="fl">1.2</span>)<span class="sc">+</span></span>
+<span id="cb4-13"><a href=""></a>  <span class="fu">scale_color_viridis_c</span>() <span class="sc">+</span></span>
+<span id="cb4-14"><a href=""></a>  <span class="fu">theme_bw</span>(<span class="at">base_size =</span> <span class="dv">18</span>) <span class="sc">+</span></span>
+<span id="cb4-15"><a href=""></a>  <span class="fu">labs</span>(<span class="at">y=</span> <span class="st">"Log Mortality Rate"</span>)</span>
+<span id="cb4-16"><a href=""></a><span class="do">## animating with gganimate</span></span>
+<span id="cb4-17"><a href=""></a><span class="fu">library</span>(gganimate)</span>
+<span id="cb4-18"><a href=""></a>gg <span class="ot">&lt;-</span> g <span class="sc">+</span> <span class="fu">transition_time</span>(Year) <span class="sc">+</span></span>
+<span id="cb4-19"><a href=""></a>  <span class="fu">ggtitle</span>(<span class="st">"Year {frame_time}"</span>)</span>
+<span id="cb4-20"><a href=""></a><span class="fu">animate</span>(gg, <span class="at">fps=</span><span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="goodness-of-fit-1" class="slide level2">
 <h2>Goodness-of-fit</h2>
 
-<img data-src="Lecture4_pre-class_files/figure-revealjs/unnamed-chunk-9-1.gif" class="r-stretch"></section>
+<img data-src="Lecture4_files/figure-revealjs/unnamed-chunk-9-1.gif" class="r-stretch"></section>
 <section id="shiny-apps" class="slide level2">
 <h2>Shiny apps</h2>
 <!-- ::: incremental -->
@@ -801,108 +799,108 @@ U_{,m} \, s_{m,m} \, V_{,m}'
 <li>a <code>server</code>, where you assemble the outputs from your given inputs</li>
 <li>the <code>shinyApp</code>, putting the two together</li>
 </ul></li>
-<li>to learn more, visit <a href="https://shiny.posit.co/">https://shiny.posit.co/</a> to get started, plenty of videos and written tutorials <!-- :::  --></li>
+<li>to learn more, visit <a href="https://shiny.posit.co/">https://shiny.posit.co/</a> to get started, plenty of videos and written tutorials <!-- ::: --></li>
 </ul>
 </div>
 </section>
 <section id="shiny-app-an-example" class="slide level2">
 <h2>Shiny app: an example</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a><span class="do">##---- SHINY APP EXAMPLE ----</span></span>
-<span id="cb3-2"><a href=""></a></span>
-<span id="cb3-3"><a href=""></a><span class="do">## cleaning the workspace</span></span>
-<span id="cb3-4"><a href=""></a><span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>(<span class="at">all=</span><span class="cn">TRUE</span>))</span>
-<span id="cb3-5"><a href=""></a><span class="do">## load useful packages</span></span>
-<span id="cb3-6"><a href=""></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb3-7"><a href=""></a><span class="fu">library</span>(patchwork)</span>
-<span id="cb3-8"><a href=""></a><span class="fu">library</span>(shiny)</span>
-<span id="cb3-9"><a href=""></a><span class="do">## loading data</span></span>
-<span id="cb3-10"><a href=""></a><span class="fu">setwd</span>(<span class="fu">dirname</span>(rstudioapi<span class="sc">::</span><span class="fu">getActiveDocumentContext</span>()<span class="sc">$</span>path))</span>
-<span id="cb3-11"><a href=""></a><span class="fu">load</span>(<span class="st">"data/MORTSWE.Rdata"</span>)</span>
-<span id="cb3-12"><a href=""></a><span class="do">## subset</span></span>
-<span id="cb3-13"><a href=""></a>my.df <span class="ot">&lt;-</span> MORT.SWE <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Sex<span class="sc">==</span><span class="st">"Male"</span>, Age <span class="sc">&lt;=</span> <span class="dv">100</span>)</span>
-<span id="cb3-14"><a href=""></a></span>
-<span id="cb3-15"><a href=""></a><span class="do">## build your user interface</span></span>
-<span id="cb3-16"><a href=""></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
-<span id="cb3-17"><a href=""></a>  <span class="do">## title of your shiny</span></span>
-<span id="cb3-18"><a href=""></a>  <span class="fu">titlePanel</span>(<span class="st">"LC parameters"</span>),</span>
-<span id="cb3-19"><a href=""></a>  <span class="do">## display a slider that returns input$year to pass to the server function</span></span>
-<span id="cb3-20"><a href=""></a>  <span class="fu">sliderInput</span>(<span class="at">inputId =</span> <span class="st">"year"</span>, <span class="at">label =</span> <span class="st">"Year"</span>, <span class="at">step =</span> <span class="dv">1</span>,</span>
-<span id="cb3-21"><a href=""></a>              <span class="at">value =</span> <span class="dv">1950</span>, <span class="at">min =</span> <span class="dv">1950</span>, <span class="at">max =</span> <span class="dv">2022</span>),</span>
-<span id="cb3-22"><a href=""></a>  <span class="do">## display a plot returned from the server</span></span>
-<span id="cb3-23"><a href=""></a>  <span class="fu">plotOutput</span>(<span class="st">"plot_pars"</span>)</span>
-<span id="cb3-24"><a href=""></a>)</span>
-<span id="cb3-25"><a href=""></a></span>
-<span id="cb3-26"><a href=""></a><span class="do">## build your server</span></span>
-<span id="cb3-27"><a href=""></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output){</span>
-<span id="cb3-28"><a href=""></a>  <span class="do">## create an output that renders a plot</span></span>
-<span id="cb3-29"><a href=""></a>  output<span class="sc">$</span>plot_pars <span class="ot">&lt;-</span> <span class="fu">renderPlot</span>({</span>
-<span id="cb3-30"><a href=""></a>    <span class="do">## subsetting data based on given input (input$year)</span></span>
-<span id="cb3-31"><a href=""></a>    my.df <span class="ot">&lt;-</span> my.df <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Year<span class="sc">&gt;=</span>input<span class="sc">$</span>year)</span>
-<span id="cb3-32"><a href=""></a>    <span class="do">## extract data</span></span>
-<span id="cb3-33"><a href=""></a>    x <span class="ot">&lt;-</span> <span class="fu">unique</span>(my.df<span class="sc">$</span>Age)</span>
-<span id="cb3-34"><a href=""></a>    t <span class="ot">&lt;-</span> <span class="fu">unique</span>(my.df<span class="sc">$</span>Year)</span>
-<span id="cb3-35"><a href=""></a>    n <span class="ot">&lt;-</span> <span class="fu">length</span>(t)</span>
-<span id="cb3-36"><a href=""></a>    m <span class="ot">&lt;-</span> <span class="fu">length</span>(x)</span>
-<span id="cb3-37"><a href=""></a>    <span class="do">## matrices</span></span>
-<span id="cb3-38"><a href=""></a>    DEATHS <span class="ot">&lt;-</span> <span class="fu">matrix</span>(my.df<span class="sc">$</span>Deaths,m,n)</span>
-<span id="cb3-39"><a href=""></a>    EXPOS <span class="ot">&lt;-</span> <span class="fu">matrix</span>(my.df<span class="sc">$</span>Exposures,m,n)</span>
-<span id="cb3-40"><a href=""></a>    <span class="do">##---- step 1: derive ALPHA -----</span></span>
-<span id="cb3-41"><a href=""></a>    <span class="do">## adjust deaths and log-rates</span></span>
-<span id="cb3-42"><a href=""></a>    DEATHS1 <span class="ot">&lt;-</span> DEATHS</span>
-<span id="cb3-43"><a href=""></a>    DEATHS1[DEATHS<span class="sc">==</span><span class="dv">0</span>] <span class="ot">&lt;-</span> <span class="fu">min</span>(DEATHS[DEATHS<span class="sc">!=</span><span class="dv">0</span>])</span>
-<span id="cb3-44"><a href=""></a>    LRATES1 <span class="ot">&lt;-</span> <span class="fu">log</span>(DEATHS1<span class="sc">/</span>EXPOS)</span>
-<span id="cb3-45"><a href=""></a>    <span class="do">## compute the mean of observed rates</span></span>
-<span id="cb3-46"><a href=""></a>    Alpha <span class="ot">&lt;-</span> <span class="fu">apply</span>(LRATES1,<span class="dv">1</span>,mean)</span>
-<span id="cb3-47"><a href=""></a>    <span class="do">##---- step 2: derive BETA and KAPPA -----</span></span>
-<span id="cb3-48"><a href=""></a>    <span class="do">## derive matrix of residuals ("centred" mortality rates)</span></span>
-<span id="cb3-49"><a href=""></a>    LMXres <span class="ot">&lt;-</span> LRATES1 <span class="sc">-</span> Alpha</span>
-<span id="cb3-50"><a href=""></a>    <span class="do">## performing the SVD</span></span>
-<span id="cb3-51"><a href=""></a>    LCsvd <span class="ot">&lt;-</span> <span class="fu">svd</span>(LMXres,<span class="at">nu=</span><span class="dv">1</span>,<span class="at">nv=</span><span class="dv">1</span>)</span>
-<span id="cb3-52"><a href=""></a>    <span class="do">## extract first left- and right-singular vectors of svd</span></span>
-<span id="cb3-53"><a href=""></a>    Beta <span class="ot">&lt;-</span> <span class="fu">c</span>(LCsvd<span class="sc">$</span>u)</span>
-<span id="cb3-54"><a href=""></a>    Kappa1 <span class="ot">&lt;-</span> <span class="fu">c</span>(LCsvd<span class="sc">$</span>v)</span>
-<span id="cb3-55"><a href=""></a>    <span class="do">## including the constraints</span></span>
-<span id="cb3-56"><a href=""></a>    <span class="do">## constraint 1</span></span>
-<span id="cb3-57"><a href=""></a>    sum.Beta <span class="ot">&lt;-</span> <span class="fu">sum</span>(Beta)</span>
-<span id="cb3-58"><a href=""></a>    Beta <span class="ot">&lt;-</span> Beta<span class="sc">/</span>sum.Beta</span>
-<span id="cb3-59"><a href=""></a>    <span class="do">## constraint 2</span></span>
-<span id="cb3-60"><a href=""></a>    Kappa1 <span class="ot">&lt;-</span> LCsvd<span class="sc">$</span>d[<span class="dv">1</span>]<span class="sc">*</span>Kappa1<span class="sc">*</span>sum.Beta</span>
-<span id="cb3-61"><a href=""></a>    <span class="do">##---- step 3: adjust KAPPA -----</span></span>
-<span id="cb3-62"><a href=""></a>    <span class="do">## function to compute difference between observed and fitted LC deaths</span></span>
-<span id="cb3-63"><a href=""></a>    koptim <span class="ot">&lt;-</span> <span class="cf">function</span>(par,alpha,beta,sum.dx,Exp){</span>
-<span id="cb3-64"><a href=""></a>      kappa <span class="ot">&lt;-</span> par[<span class="dv">1</span>]</span>
-<span id="cb3-65"><a href=""></a>      lmx.lc <span class="ot">&lt;-</span> alpha<span class="sc">+</span>beta<span class="sc">*</span>kappa</span>
-<span id="cb3-66"><a href=""></a>      z.lc <span class="ot">&lt;-</span> <span class="fu">exp</span>(lmx.lc)<span class="sc">*</span>Exp</span>
-<span id="cb3-67"><a href=""></a>      sum.z.lc <span class="ot">&lt;-</span> <span class="fu">sum</span>(z.lc)</span>
-<span id="cb3-68"><a href=""></a>      diff.lc <span class="ot">&lt;-</span> <span class="fu">abs</span>(sum.dx<span class="sc">-</span>sum.z.lc)</span>
-<span id="cb3-69"><a href=""></a>      <span class="fu">return</span>(diff.lc)</span>
-<span id="cb3-70"><a href=""></a>    }</span>
-<span id="cb3-71"><a href=""></a>    <span class="do">## adjust Kappa every year</span></span>
-<span id="cb3-72"><a href=""></a>    Kappa <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n)</span>
-<span id="cb3-73"><a href=""></a>    <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n){</span>
-<span id="cb3-74"><a href=""></a>      KappaSecStep <span class="ot">&lt;-</span> <span class="fu">optimize</span>(<span class="at">f=</span>koptim,<span class="at">interval=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">100</span>,<span class="dv">100</span>),<span class="at">alpha=</span>Alpha,<span class="at">beta=</span>Beta,<span class="at">sum.dx=</span><span class="fu">sum</span>(DEATHS[,i]),</span>
-<span id="cb3-75"><a href=""></a>                               <span class="at">Exp=</span>EXPOS[,i])</span>
-<span id="cb3-76"><a href=""></a>      Kappa[i] <span class="ot">&lt;-</span> KappaSecStep<span class="sc">$</span>minimum</span>
-<span id="cb3-77"><a href=""></a>    }</span>
-<span id="cb3-78"><a href=""></a>    <span class="do">## plot of parameters</span></span>
-<span id="cb3-79"><a href=""></a>    df.plot<span class="fl">.1</span> <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">Age=</span>x,<span class="at">Alpha=</span>Alpha,<span class="at">Beta=</span>Beta)</span>
-<span id="cb3-80"><a href=""></a>    df.plot<span class="fl">.2</span> <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">Year=</span>t,<span class="at">Kappa=</span>Kappa)</span>
-<span id="cb3-81"><a href=""></a></span>
-<span id="cb3-82"><a href=""></a>    f1 <span class="ot">&lt;-</span> df.plot<span class="fl">.1</span> <span class="sc">%&gt;%</span> <span class="fu">pivot_longer</span>(<span class="sc">-</span>Age) <span class="sc">%&gt;%</span></span>
-<span id="cb3-83"><a href=""></a>      <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Age,<span class="at">y=</span>value,<span class="at">color=</span>name)) <span class="sc">+</span></span>
-<span id="cb3-84"><a href=""></a>      <span class="fu">geom_line</span>()<span class="sc">+</span></span>
-<span id="cb3-85"><a href=""></a>      <span class="fu">facet_wrap</span>(.<span class="sc">~</span>name,<span class="at">scales=</span><span class="st">"free_y"</span>)</span>
-<span id="cb3-86"><a href=""></a>    f2 <span class="ot">&lt;-</span> df.plot<span class="fl">.2</span> <span class="sc">%&gt;%</span></span>
-<span id="cb3-87"><a href=""></a>      <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Year,<span class="at">y=</span>Kappa)) <span class="sc">+</span></span>
-<span id="cb3-88"><a href=""></a>      <span class="fu">geom_line</span>()</span>
-<span id="cb3-89"><a href=""></a></span>
-<span id="cb3-90"><a href=""></a>    <span class="do">## combining plots</span></span>
-<span id="cb3-91"><a href=""></a>    f1<span class="sc">+</span>f2</span>
-<span id="cb3-92"><a href=""></a>  })</span>
-<span id="cb3-93"><a href=""></a>}</span>
-<span id="cb3-94"><a href=""></a></span>
-<span id="cb3-95"><a href=""></a><span class="do">## run the shiny app, which puts together the ui and server</span></span>
-<span id="cb3-96"><a href=""></a><span class="fu">shinyApp</span>(<span class="at">ui =</span> ui, <span class="at">server =</span> server)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a><span class="do">##---- SHINY APP EXAMPLE ----</span></span>
+<span id="cb5-2"><a href=""></a></span>
+<span id="cb5-3"><a href=""></a><span class="do">## cleaning the workspace</span></span>
+<span id="cb5-4"><a href=""></a><span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>(<span class="at">all=</span><span class="cn">TRUE</span>))</span>
+<span id="cb5-5"><a href=""></a><span class="do">## load useful packages</span></span>
+<span id="cb5-6"><a href=""></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb5-7"><a href=""></a><span class="fu">library</span>(patchwork)</span>
+<span id="cb5-8"><a href=""></a><span class="fu">library</span>(shiny)</span>
+<span id="cb5-9"><a href=""></a><span class="do">## loading data</span></span>
+<span id="cb5-10"><a href=""></a><span class="fu">setwd</span>(<span class="fu">dirname</span>(rstudioapi<span class="sc">::</span><span class="fu">getActiveDocumentContext</span>()<span class="sc">$</span>path))</span>
+<span id="cb5-11"><a href=""></a><span class="fu">load</span>(<span class="st">"data/MORTSWE.Rdata"</span>)</span>
+<span id="cb5-12"><a href=""></a><span class="do">## subset</span></span>
+<span id="cb5-13"><a href=""></a>my.df <span class="ot">&lt;-</span> MORT.SWE <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Sex<span class="sc">==</span><span class="st">"Male"</span>, Age <span class="sc">&lt;=</span> <span class="dv">100</span>)</span>
+<span id="cb5-14"><a href=""></a></span>
+<span id="cb5-15"><a href=""></a><span class="do">## build your user interface</span></span>
+<span id="cb5-16"><a href=""></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
+<span id="cb5-17"><a href=""></a>  <span class="do">## title of your shiny</span></span>
+<span id="cb5-18"><a href=""></a>  <span class="fu">titlePanel</span>(<span class="st">"LC parameters"</span>),</span>
+<span id="cb5-19"><a href=""></a>  <span class="do">## display a slider that returns input$year to pass to the server function</span></span>
+<span id="cb5-20"><a href=""></a>  <span class="fu">sliderInput</span>(<span class="at">inputId =</span> <span class="st">"year"</span>, <span class="at">label =</span> <span class="st">"Year"</span>, <span class="at">step =</span> <span class="dv">1</span>,</span>
+<span id="cb5-21"><a href=""></a>              <span class="at">value =</span> <span class="dv">1950</span>, <span class="at">min =</span> <span class="dv">1950</span>, <span class="at">max =</span> <span class="dv">2022</span>),</span>
+<span id="cb5-22"><a href=""></a>  <span class="do">## display a plot returned from the server</span></span>
+<span id="cb5-23"><a href=""></a>  <span class="fu">plotOutput</span>(<span class="st">"plot_pars"</span>)</span>
+<span id="cb5-24"><a href=""></a>)</span>
+<span id="cb5-25"><a href=""></a></span>
+<span id="cb5-26"><a href=""></a><span class="do">## build your server</span></span>
+<span id="cb5-27"><a href=""></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output){</span>
+<span id="cb5-28"><a href=""></a>  <span class="do">## create an output that renders a plot</span></span>
+<span id="cb5-29"><a href=""></a>  output<span class="sc">$</span>plot_pars <span class="ot">&lt;-</span> <span class="fu">renderPlot</span>({</span>
+<span id="cb5-30"><a href=""></a>    <span class="do">## subsetting data based on given input (input$year)</span></span>
+<span id="cb5-31"><a href=""></a>    my.df <span class="ot">&lt;-</span> my.df <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Year<span class="sc">&gt;=</span>input<span class="sc">$</span>year)</span>
+<span id="cb5-32"><a href=""></a>    <span class="do">## extract data</span></span>
+<span id="cb5-33"><a href=""></a>    x <span class="ot">&lt;-</span> <span class="fu">unique</span>(my.df<span class="sc">$</span>Age)</span>
+<span id="cb5-34"><a href=""></a>    t <span class="ot">&lt;-</span> <span class="fu">unique</span>(my.df<span class="sc">$</span>Year)</span>
+<span id="cb5-35"><a href=""></a>    n <span class="ot">&lt;-</span> <span class="fu">length</span>(t)</span>
+<span id="cb5-36"><a href=""></a>    m <span class="ot">&lt;-</span> <span class="fu">length</span>(x)</span>
+<span id="cb5-37"><a href=""></a>    <span class="do">## matrices</span></span>
+<span id="cb5-38"><a href=""></a>    DEATHS <span class="ot">&lt;-</span> <span class="fu">matrix</span>(my.df<span class="sc">$</span>Deaths,m,n)</span>
+<span id="cb5-39"><a href=""></a>    EXPOS <span class="ot">&lt;-</span> <span class="fu">matrix</span>(my.df<span class="sc">$</span>Exposures,m,n)</span>
+<span id="cb5-40"><a href=""></a>    <span class="do">##---- step 1: derive ALPHA -----</span></span>
+<span id="cb5-41"><a href=""></a>    <span class="do">## adjust deaths and log-rates</span></span>
+<span id="cb5-42"><a href=""></a>    DEATHS1 <span class="ot">&lt;-</span> DEATHS</span>
+<span id="cb5-43"><a href=""></a>    DEATHS1[DEATHS<span class="sc">==</span><span class="dv">0</span>] <span class="ot">&lt;-</span> <span class="fu">min</span>(DEATHS[DEATHS<span class="sc">!=</span><span class="dv">0</span>])</span>
+<span id="cb5-44"><a href=""></a>    LRATES1 <span class="ot">&lt;-</span> <span class="fu">log</span>(DEATHS1<span class="sc">/</span>EXPOS)</span>
+<span id="cb5-45"><a href=""></a>    <span class="do">## compute the mean of observed rates</span></span>
+<span id="cb5-46"><a href=""></a>    Alpha <span class="ot">&lt;-</span> <span class="fu">apply</span>(LRATES1,<span class="dv">1</span>,mean)</span>
+<span id="cb5-47"><a href=""></a>    <span class="do">##---- step 2: derive BETA and KAPPA -----</span></span>
+<span id="cb5-48"><a href=""></a>    <span class="do">## derive matrix of residuals ("centred" mortality rates)</span></span>
+<span id="cb5-49"><a href=""></a>    LMXres <span class="ot">&lt;-</span> LRATES1 <span class="sc">-</span> Alpha</span>
+<span id="cb5-50"><a href=""></a>    <span class="do">## performing the SVD</span></span>
+<span id="cb5-51"><a href=""></a>    LCsvd <span class="ot">&lt;-</span> <span class="fu">svd</span>(LMXres,<span class="at">nu=</span><span class="dv">1</span>,<span class="at">nv=</span><span class="dv">1</span>)</span>
+<span id="cb5-52"><a href=""></a>    <span class="do">## extract first left- and right-singular vectors of svd</span></span>
+<span id="cb5-53"><a href=""></a>    Beta <span class="ot">&lt;-</span> <span class="fu">c</span>(LCsvd<span class="sc">$</span>u)</span>
+<span id="cb5-54"><a href=""></a>    Kappa1 <span class="ot">&lt;-</span> <span class="fu">c</span>(LCsvd<span class="sc">$</span>v)</span>
+<span id="cb5-55"><a href=""></a>    <span class="do">## including the constraints</span></span>
+<span id="cb5-56"><a href=""></a>    <span class="do">## constraint 1</span></span>
+<span id="cb5-57"><a href=""></a>    sum.Beta <span class="ot">&lt;-</span> <span class="fu">sum</span>(Beta)</span>
+<span id="cb5-58"><a href=""></a>    Beta <span class="ot">&lt;-</span> Beta<span class="sc">/</span>sum.Beta</span>
+<span id="cb5-59"><a href=""></a>    <span class="do">## constraint 2</span></span>
+<span id="cb5-60"><a href=""></a>    Kappa1 <span class="ot">&lt;-</span> LCsvd<span class="sc">$</span>d[<span class="dv">1</span>]<span class="sc">*</span>Kappa1<span class="sc">*</span>sum.Beta</span>
+<span id="cb5-61"><a href=""></a>    <span class="do">##---- step 3: adjust KAPPA -----</span></span>
+<span id="cb5-62"><a href=""></a>    <span class="do">## function to compute difference between observed and fitted LC deaths</span></span>
+<span id="cb5-63"><a href=""></a>    koptim <span class="ot">&lt;-</span> <span class="cf">function</span>(par,alpha,beta,sum.dx,Exp){</span>
+<span id="cb5-64"><a href=""></a>      kappa <span class="ot">&lt;-</span> par[<span class="dv">1</span>]</span>
+<span id="cb5-65"><a href=""></a>      lmx.lc <span class="ot">&lt;-</span> alpha<span class="sc">+</span>beta<span class="sc">*</span>kappa</span>
+<span id="cb5-66"><a href=""></a>      z.lc <span class="ot">&lt;-</span> <span class="fu">exp</span>(lmx.lc)<span class="sc">*</span>Exp</span>
+<span id="cb5-67"><a href=""></a>      sum.z.lc <span class="ot">&lt;-</span> <span class="fu">sum</span>(z.lc)</span>
+<span id="cb5-68"><a href=""></a>      diff.lc <span class="ot">&lt;-</span> <span class="fu">abs</span>(sum.dx<span class="sc">-</span>sum.z.lc)</span>
+<span id="cb5-69"><a href=""></a>      <span class="fu">return</span>(diff.lc)</span>
+<span id="cb5-70"><a href=""></a>    }</span>
+<span id="cb5-71"><a href=""></a>    <span class="do">## adjust Kappa every year</span></span>
+<span id="cb5-72"><a href=""></a>    Kappa <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n)</span>
+<span id="cb5-73"><a href=""></a>    <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n){</span>
+<span id="cb5-74"><a href=""></a>      KappaSecStep <span class="ot">&lt;-</span> <span class="fu">optimize</span>(<span class="at">f=</span>koptim,<span class="at">interval=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">100</span>,<span class="dv">100</span>),<span class="at">alpha=</span>Alpha,<span class="at">beta=</span>Beta,<span class="at">sum.dx=</span><span class="fu">sum</span>(DEATHS[,i]),</span>
+<span id="cb5-75"><a href=""></a>                               <span class="at">Exp=</span>EXPOS[,i])</span>
+<span id="cb5-76"><a href=""></a>      Kappa[i] <span class="ot">&lt;-</span> KappaSecStep<span class="sc">$</span>minimum</span>
+<span id="cb5-77"><a href=""></a>    }</span>
+<span id="cb5-78"><a href=""></a>    <span class="do">## plot of parameters</span></span>
+<span id="cb5-79"><a href=""></a>    df.plot<span class="fl">.1</span> <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">Age=</span>x,<span class="at">Alpha=</span>Alpha,<span class="at">Beta=</span>Beta)</span>
+<span id="cb5-80"><a href=""></a>    df.plot<span class="fl">.2</span> <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">Year=</span>t,<span class="at">Kappa=</span>Kappa)</span>
+<span id="cb5-81"><a href=""></a></span>
+<span id="cb5-82"><a href=""></a>    f1 <span class="ot">&lt;-</span> df.plot<span class="fl">.1</span> <span class="sc">%&gt;%</span> <span class="fu">pivot_longer</span>(<span class="sc">-</span>Age) <span class="sc">%&gt;%</span></span>
+<span id="cb5-83"><a href=""></a>      <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Age,<span class="at">y=</span>value,<span class="at">color=</span>name)) <span class="sc">+</span></span>
+<span id="cb5-84"><a href=""></a>      <span class="fu">geom_line</span>()<span class="sc">+</span></span>
+<span id="cb5-85"><a href=""></a>      <span class="fu">facet_wrap</span>(.<span class="sc">~</span>name,<span class="at">scales=</span><span class="st">"free_y"</span>)</span>
+<span id="cb5-86"><a href=""></a>    f2 <span class="ot">&lt;-</span> df.plot<span class="fl">.2</span> <span class="sc">%&gt;%</span></span>
+<span id="cb5-87"><a href=""></a>      <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>Year,<span class="at">y=</span>Kappa)) <span class="sc">+</span></span>
+<span id="cb5-88"><a href=""></a>      <span class="fu">geom_line</span>()</span>
+<span id="cb5-89"><a href=""></a></span>
+<span id="cb5-90"><a href=""></a>    <span class="do">## combining plots</span></span>
+<span id="cb5-91"><a href=""></a>    f1<span class="sc">+</span>f2</span>
+<span id="cb5-92"><a href=""></a>  })</span>
+<span id="cb5-93"><a href=""></a>}</span>
+<span id="cb5-94"><a href=""></a></span>
+<span id="cb5-95"><a href=""></a><span class="do">## run the shiny app, which puts together the ui and server</span></span>
+<span id="cb5-96"><a href=""></a><span class="fu">shinyApp</span>(<span class="at">ui =</span> ui, <span class="at">server =</span> server)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="shiny-app-an-example-1" class="slide level2">
 <h2>Shiny app: an example</h2>
@@ -929,7 +927,7 @@ U_{,m} \, s_{m,m} \, V_{,m}'
 <h2>Forecasting with LC: a schematic view</h2>
 <div style="font-size: 70%;">
 <!-- ::: {.fragment fragment-index=1} -->
-<p><span class="math display">\[\ln \left(m_{x,t}\right) \simeq \color{green}{\alpha_x} + \color{orange}{\beta_x} \color{violet}{\kappa_t} \qquad\qquad \color{blue}{\ln \left(m_{x,T+h}\right)} \simeq \color{green}{\alpha_x} + \color{orange}{\beta_x} \color{blue}{\kappa_{t_F}}\]</span> <!-- :::  --></p>
+<p><span class="math display">\[\ln \left(m_{x,t}\right) \simeq \color{green}{\alpha_x} + \color{orange}{\beta_x} \color{violet}{\kappa_t} \qquad\qquad \color{blue}{\ln \left(m_{x,T+h}\right)} \simeq \color{green}{\alpha_x} + \color{orange}{\beta_x} \color{blue}{\kappa_{t_F}}\]</span> <!-- ::: --></p>
 <!-- ::: {.fragment fragment-index=2} -->
 <p><span class="math display">\[              \left ( \begin{array}{ccccccc}
                     \ln(m_{x_1,t_1}) &amp; \ln(m_{x_1,t_2}) &amp; \ldots &amp; \ln(m_{x_1,T}) &amp; \color{blue}{\ln(m_{x_1,T+1})} &amp; \color{blue}{\ldots} &amp; \color{blue}{\ln(m_{x_1,T+h})} \\
@@ -937,7 +935,7 @@ U_{,m} \, s_{m,m} \, V_{,m}'
                     \ln(m_{x_3,t_1}) &amp; \ln(m_{x_3,t_2}) &amp; \ldots &amp; \ln(m_{x_3,T}) &amp; \color{blue}{\ln(m_{x_3,T+1})} &amp; \color{blue}{\ldots} &amp; \color{blue}{\ln(m_{x_3,T+h})} \\
                     \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \color{blue}{\vdots} &amp; \color{blue}{\ddots} &amp; \color{blue}{\vdots} \\
                     \ln(m_{x_m,t_1}) &amp; \ln(m_{x_m,t_2}) &amp; \ldots &amp; \ln(m_{x_m,T}) &amp; \color{blue}{\ln(m_{x_m,T+1})} &amp; \color{blue}{\ldots} &amp; \color{blue}{\ln(m_{x_m,T+h})}\\
-                \end{array} \right ) \simeq \]</span> <!-- :::  --></p>
+                \end{array} \right ) \simeq \]</span> <!-- ::: --></p>
 <!-- ::: {.fragment fragment-index=3} -->
 <p><span class="math display">\[              \left ( \begin{array}{c}
                     \color{green}{\alpha_{x_1}}\\
@@ -966,19 +964,19 @@ U_{,m} \, s_{m,m} \, V_{,m}'
 <section id="colorviolethatkappa_t-simulations" class="slide level2">
 <h2><span class="math inline">\(\, \color{violet}{\hat{\kappa}_t}\)</span> simulations</h2>
 
-<img data-src="Lecture4_pre-class_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section>
+<img data-src="Lecture4_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section>
 <section id="colorviolethatkappa_t-95-pis" class="slide level2">
 <h2><span class="math inline">\(\, \color{violet}{\hat{\kappa}_t}\)</span> 95% PIs</h2>
 
-<img data-src="Lecture4_pre-class_files/figure-revealjs/unnamed-chunk-11-1.png" width="960" class="r-stretch"></section>
+<img data-src="Lecture4_files/figure-revealjs/unnamed-chunk-11-1.png" width="960" class="r-stretch"></section>
 <section id="from-colorviolethatkappa_t-to-ln-left-hatm_xt-right" class="slide level2">
 <h2>From <span class="math inline">\(\, \color{violet}{\hat{\kappa}_t}\)</span> to <span class="math inline">\(\ln \left( \hat{m}_{xt} \right)\)</span></h2>
 
-<img data-src="Lecture4_pre-class_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section>
+<img data-src="Lecture4_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section>
 <section id="from-colorviolethatkappa_t-to-hate_0" class="slide level2">
 <h2>From <span class="math inline">\(\, \color{violet}{\hat{\kappa}_t}\)</span> to <span class="math inline">\(\hat{e}_0\)</span></h2>
 
-<img data-src="Lecture4_pre-class_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section>
+<img data-src="Lecture4_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section>
 <section id="the-lc-model-a-summary" class="slide level2">
 <h2>The LC model: a summary</h2>
 <!-- ::: incremental -->
@@ -999,7 +997,7 @@ U_{,m} \, s_{m,m} \, V_{,m}'
 <li>fixed age-pattern of mortality decline</li>
 <li>rigid structure</li>
 </ul></li>
-<li>Several extensions proposed to overcome some of these issues <!-- :::  --></li>
+<li>Several extensions proposed to overcome some of these issues <!-- ::: --></li>
 </ul>
 </div>
 </section>
@@ -1011,7 +1009,7 @@ U_{,m} \, s_{m,m} \, V_{,m}'
 <li>Normality assumption: Poisson LC (Brouhns et al.&nbsp;2002)</li>
 <li>jagged fitted and forecast age profile, lacking smoothness: Smooth LC (Delwarde et al.&nbsp;2007)</li>
 <li>fixed age-pattern of mortality decline: Li et al.&nbsp;(2013)</li>
-<li>rigid structure <!-- :::  --></li>
+<li>rigid structure <!-- ::: --></li>
 </ul>
 </section>
 <section id="other-lc-extensions-single-pop" class="slide level2">
@@ -1041,7 +1039,7 @@ U_{,m} \, s_{m,m} \, V_{,m}'
 <li>Option 2: out-of-sample forecasting
 <ul>
 <li>from the observed time series <span class="math inline">\(\boldsymbol{y}=\left[y_1, y_2, \dots, y_{n-h},\dots y_T \right]\)</span>, suppose that you have observed only the first <span class="math inline">\(n-h\)</span> data points, forecast <span class="math inline">\(h\)</span> years in the future and compare the forecasts with the withheld data points <span class="math inline">\(y_{n-h+1},\dots y_T\)</span></li>
-<li><span class="math inline">\(\boldsymbol{y}\)</span> can refer to any forecast measure (log-rates, rates, summary measures) <!-- :::    --></li>
+<li><span class="math inline">\(\boldsymbol{y}\)</span> can refer to any forecast measure (log-rates, rates, summary measures) <!-- ::: --></li>
 </ul></li>
 </ul>
 </div>
@@ -1060,7 +1058,7 @@ U_{,m} \, s_{m,m} \, V_{,m}'
 <li>Mean Absolute Error (MAE) <span class="math inline">\(= \frac{1}{h} \sum_{t=1}^h |e_t|\)</span></li>
 <li>Mean Absolute Percentage Error (MAPE) <span class="math inline">\(= \frac{1}{h} \sum_{t=1}^h |p_t|\)</span></li>
 </ul></li>
-<li>The smaller the error, the better <!-- :::  --></li>
+<li>The smaller the error, the better <!-- ::: --></li>
 </ul>
 </div>
 </section>
@@ -1073,18 +1071,18 @@ U_{,m} \, s_{m,m} \, V_{,m}'
 <li>Empirical Coverage Probability (ECP): proportion of observations falling into the PI</li>
 <li>Coverage Probability Deviance (CPD) <span class="math inline">\(=|\alpha - \mathrm{ECP} |\)</span>, with CPD <span class="math inline">\(\in \left[0, \alpha \right]\)</span></li>
 </ul></li>
-<li>The smaller the CPD, the better <!-- :::  --></li>
+<li>The smaller the CPD, the better <!-- ::: --></li>
 </ul>
 <!-- with the withheld data points by computing the coverage of your prediction interval an accuracy measure, e.g.: -->
 </section>
 <section id="lc-forecast-evaluation" class="slide level2">
 <h2>LC forecast evaluation</h2>
 
-<img data-src="Lecture4_pre-class_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch"></section>
+<img data-src="Lecture4_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch"></section>
 <section id="lc-forecast-evaluation-1" class="slide level2">
 <h2>LC forecast evaluation</h2>
 
-<img data-src="Lecture4_pre-class_files/figure-revealjs/unnamed-chunk-15-1.png" width="960" class="r-stretch"></section>
+<img data-src="Lecture4_files/figure-revealjs/unnamed-chunk-15-1.png" width="960" class="r-stretch"></section>
 <section id="day-4-assignment" class="slide level2">
 <h2>Day 4 assignment</h2>
 <div title="Assignment">
@@ -1118,19 +1116,19 @@ U_{,m} \, s_{m,m} \, V_{,m}'
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="Lecture4_pre-class_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="Lecture4_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="Lecture4_pre-class_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="Lecture4_pre-class_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="Lecture4_pre-class_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="Lecture4_pre-class_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="Lecture4_pre-class_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="Lecture4_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="Lecture4_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="Lecture4_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="Lecture4_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="Lecture4_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="Lecture4_pre-class_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="Lecture4_pre-class_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="Lecture4_pre-class_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="Lecture4_pre-class_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="Lecture4_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="Lecture4_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="Lecture4_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="Lecture4_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
